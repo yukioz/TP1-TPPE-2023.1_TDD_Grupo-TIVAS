@@ -2,14 +2,14 @@ package entities;
 
 public class PessoaFisica {
     // Atributos
-    private Nome nome;
+    private NomeCompleto nome;
     private String cpf;
     private String matricula;
     private String sexo;
     private String email;
 
     // Construtor
-    public PessoaFisica(Nome nome, String cpf, String matricula, String sexo, String email) {
+    public PessoaFisica(NomeCompleto nome, String cpf, String matricula, String sexo, String email) {
         this.nome = nome;
         this.cpf = cpf;
         this.matricula = matricula;
@@ -19,11 +19,11 @@ public class PessoaFisica {
 
     // Getters e Setters
 
-    public Nome getNome() {
+    public NomeCompleto getNome() {
         return nome;
     }
 
-    public void setNome(Nome nome) {
+    public void setNome(NomeCompleto nome) {
         this.nome = nome;
     }
 
@@ -60,6 +60,24 @@ public class PessoaFisica {
     }
 
     // Método para verificar a completude da PessoaFisica
+    public int calculaCompletude() {
+        int completude = 0;
 
+        if(email != null && !email.isEmpty()) {
+            completude+=20;
+        }
+        if(cpf != null && !cpf.isEmpty()) {
+            completude+=20;
+        }
+        if(matricula != null && !matricula.isEmpty()) {
+            completude+=20;
+        }
+        if(sexo != null && !sexo.isEmpty()) {
+            completude+=20;
+        }
+
+        completude = completude + (nome.calculaPorcentagemDaCompletude()/5);
+
+        return completude;
+    }
 }
-

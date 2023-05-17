@@ -1,11 +1,11 @@
 package entities;
 
-public class Nome {
+public class NomeCompleto {
     private String primeiroNome;
     private String nomeMeio;
     private String ultimoNome;
 
-    public Nome(String primeiroNome, String nomeMeio, String ultimoNome) {
+    public NomeCompleto(String primeiroNome, String nomeMeio, String ultimoNome) {
         this.primeiroNome = primeiroNome;
         this.nomeMeio = nomeMeio;
         this.ultimoNome = ultimoNome;
@@ -38,5 +38,19 @@ public class Nome {
     }
 
     // Método para verificar a completude do Nome
-}
+    public int calculaPorcentagemDaCompletude() {
+        int completude = 0;
 
+        if(primeiroNome != null && !primeiroNome.isEmpty()) {
+            completude+=34;
+        }
+        if(nomeMeio != null && !nomeMeio.isEmpty()) {
+            completude+=33;
+        }
+        if(ultimoNome != null && !ultimoNome.isEmpty()) {
+            completude+=33;
+        }
+
+        return completude;
+    }
+}
