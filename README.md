@@ -110,16 +110,16 @@ Siga os passos:
 
 ## Rodando no vsCode
 
-siga os passos
-
 Siga os passos:
 
-1) Verifique se o gradle está instalado na sua máquina.
+1) Verifique se o gradle na versão 8.1.1 está instalado na sua máquina.
 
-no terminal coloque:
+2) Vá para a pasta do projeto (T1-Project) e insira os comandos no terminal:
 
-| $ gradle build
-| $ gradle test
+```console
+ $ gradle build
+ $ gradle test
+```
 
 ## Rodando do Intellij
 
