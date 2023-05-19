@@ -60,7 +60,7 @@ public class PessoaFisica {
     }
 
     // Método para verificar a completude da PessoaFisica
-    public int calculaCompletude() {
+    public int calculaCompletudePessoa() {
         int completude = 0;
 
         if(email != null && !email.isEmpty()) {
@@ -76,7 +76,7 @@ public class PessoaFisica {
             completude+=20;
         }
 
-        completude = completude + (nome.calculaPorcentagemDaCompletude()/5);
+        completude = completude + (nome.calculaCompletudeNome()/5);
 
         return completude;
     }

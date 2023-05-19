@@ -38,7 +38,7 @@ public class NomeCompleto {
     }
 
     // Método para verificar a completude do Nome
-    public int calculaPorcentagemDaCompletude() {
+    public int calculaCompletudeNome() {
         int completude = 0;
 
         if(primeiroNome != null && !primeiroNome.isEmpty()) {
