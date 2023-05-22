@@ -92,9 +92,44 @@ exceções.
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Java (gradle)<br> JDK 17
+
+## Rodando no Eclipse
+
+Siga os passos:
+
+![eclipse-1](./assets/eclipse-1.png)
+
+![eclipse-2](./assets/eclipse-2.png)
+
+![eclipse-3](./assets/eclipse-3.png)
+
+![eclipse-4](./assets/eclipse-4.png)
+
+![eclipse-4](./assets/eclipse-5.png)
+
+## Rodando no vsCode
+
+Siga os passos:
+
+1) Verifique se o gradle na versão 8.1.1 está instalado na sua máquina.
+
+2) Vá para a pasta do projeto (T1-Project) e insira os comandos no terminal:
+
+```console
+ $ gradle build
+ $ gradle test
+```
+
+## Rodando do Intellij
+
+Siga os passos:
+
+1) Abra o projeto com a opção de gradle e java.
+
+2) Execute os passo:
+
+![intellij-1](./assets/intellij-1.png)
 
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
