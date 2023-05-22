@@ -51,16 +51,10 @@ public class Publication {
         this.authors = authors;
     }
 
-    // Método para verificar a completude da PessoaFisica
-    public int calculateCompleteness() {
-        int completude = 100;
+    // Método para verificar a completness da PessoaFisica
+    public int calculatePublicationCompleteness() {
+        int completness = 100;
 
-        return completude;
-    }
-
-    public int calculateAtomicCompleteness() {
-        int completude = 100;
-
-        return completude;
+        return completness;
     }
 }

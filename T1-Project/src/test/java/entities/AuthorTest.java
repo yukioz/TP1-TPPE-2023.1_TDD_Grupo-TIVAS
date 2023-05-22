@@ -4,17 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
+
 class AuthorTest {
 
     @Test
-    void calculateCompleteness() {
+    void calculateAuthorCompleteness() {
     }
 
-    @Test
-    void calculateOrInclusiveCompleteness() {
-    }
-
-    @Test
-    void calculateOrExclusiveCompleteness() {
-    }
 }

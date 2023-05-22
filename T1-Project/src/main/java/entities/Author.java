@@ -1,37 +1,27 @@
 package entities;
 
 public class Author {
-    private String identifier_lattes;
-    private String identifier_orcid;
+    private Identifier identifier;
     private String nationality;
     private String birthCountry;
     private String birthCity;
     private String birthState;
 
     // Construtor
-    public Author(String identifier_lattes, String identifier_orcid, String nationality, String birthCountry, String birthCity, String birthState) {
-        this.identifier_lattes = identifier_lattes;
-        this.identifier_orcid = identifier_orcid;
+    public Author(Identifier identifier, String nationality, String birthCountry, String birthCity, String birthState) {
+        this.identifier = identifier;
         this.nationality = nationality;
         this.birthCountry = birthCountry;
         this.birthCity = birthCity;
         this.birthState = birthState;
     }
 
-    public String getIdentifier_lattes() {
-        return identifier_lattes;
+    public Identifier getIdentifier() {
+        return identifier;
     }
 
-    public void setIdentifier_lattes(String identifier_lattes) {
-        this.identifier_lattes = identifier_lattes;
-    }
-
-    public String getIdentifier_orcid() {
-        return identifier_orcid;
-    }
-
-    public void setIdentifier_orcid(String identifier_orcid) {
-        this.identifier_orcid = identifier_orcid;
+    public void setIdentifier(Identifier identifier) {
+        this.identifier = identifier;
     }
 
     public String getNationality() {
@@ -66,22 +56,10 @@ public class Author {
         this.birthState = birthState;
     }
 
-    // Método para verificar a completude
-    public int calculateCompleteness() {
-        int completude = 100;
+    // Método para verificar a completness
+    public int calculateAuthorCompleteness() {
+        int completness = 100;
 
-        return completude;
-    }
-
-    public int calculateOrInclusiveCompleteness() {
-        int completude = 100;
-
-        return completude;
-    }
-
-    public int calculateOrExclusiveCompleteness() {
-        int completude = 100;
-
-        return completude;
+        return completness;
     }
 }
