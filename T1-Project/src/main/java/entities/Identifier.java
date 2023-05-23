@@ -25,10 +25,9 @@ public class Identifier {
     this.orcid = orcid;
   }
 
+ public int calculateIdentifierCompleteness() {
+    if(lattes.isEmpty() && orcid.isEmpty()) return 0;
+    return 100;
+  }
 
-  public int calculateIdentifierCompleteness() {
-    int completness = 100;
-
-    return completness;
-}
 }
