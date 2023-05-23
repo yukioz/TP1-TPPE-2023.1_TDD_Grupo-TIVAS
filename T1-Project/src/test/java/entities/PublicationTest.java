@@ -7,10 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PublicationTest {
 
     @Test
-    void calculateCompleteness() {
+    void calculatePublicationCompleteness() {
     }
 
-    @Test
-    void calculateAtomicCompleteness() {
-    }
 }
