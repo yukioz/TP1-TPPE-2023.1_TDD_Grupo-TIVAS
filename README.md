@@ -2,21 +2,19 @@ UnB - Universidade de Brasilia
 FGA - Faculdade do Gama  
 TPPE - Técnicas de Programação para Plataformas Emergentes  
 
-## Grupos de alunos
+## Integrantes do grupo
 
 | Nome | Matrícula |
 |--- |--- |
-| Amanda | xx/0yzzzzz |
-| Irwin Schmitt | xx/0yzzzzz |
-| Sara Campos | xx/0yzzzzz |
-| Thaís Rebouças | xx/0yzzzzz |
-| Victor Yukio | 180068229 |
+| Amanda | 19/0124997 |
+| Irwin Schmitt | 17/0105342 |
+| Sara Campos | 17/0045269 |
+| Thaís Rebouças | 18/0078224 |
+| Victor Yukio | 18/0068229 |
 
-### Trabalho Prático 1 - _Test-Driven Development_
+## Trabalho Prático 1 - _Test-Driven Development_
 
----
-
-**Enunciado do trabalho** 
+**Enunciado** 
 
 Seja o cenário descrito a seguir: 
 
@@ -69,32 +67,27 @@ Seja o cenário descrito a seguir:
 > O cálculo da completude de um registro é feito de maneira recursiva, de modo
 > que o valor da completudo do campo pai de um registro é dado pelo valor da
 > completude de seus filhos, considerando as regras apresentadas anteriormente. 
-
-O trabalho deverá apresentar o emprego das três técnicas de TDD (falsificação,
+>
+>O trabalho deverá apresentar o emprego das três técnicas de TDD (falsificação,
 duplicação e triangulação) em, pelo menos, nas três seguintes situações: 
-
-* Calculo da completude de campos OR EXCLUSIVO; 
-* Cálculo da completude de registros multi-campos.
-
-Nesses dois casos deverá, para efeito de evidência, ter a seguinte sequencia de
+>
+> * Calculo da completude de campos OR EXCLUSIVO; 
+> * Cálculo da completude de registros multi-campos.
+>
+> Nesses dois casos deverá, para efeito de evidência, ter a seguinte sequencia de
 _commits_:
-* falsificação; 
-* duplicação; 
-* triangulação.
-
-:exclamation::exclamation::exclamation:**ATENÇÃO:** todos os testes finais
-deverão estar triangulados por parametrização, com exceção dos testes de
-exceções.
-
+> * falsificação; 
+> * duplicação; 
+> * triangulação.
 ---
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: Java (gradle)<br> JDK 17
+**Linguagem**: Java (gradle) JDK 17
 
-## Rodando no Eclipse
+### Eclipse
 
 Siga os passos:
 
@@ -108,28 +101,25 @@ Siga os passos:
 
 ![eclipse-4](./assets/eclipse-5.png)
 
-## Rodando no vsCode
+### vsCode
 
 Siga os passos:
 
 1) Verifique se o gradle na versão 8.1.1 está instalado na sua máquina.
 
-2) Vá para a pasta do projeto (T1-Project) e insira os comandos no terminal:
+2) Vá para a pasta do projeto (T1-Project) e digite os comandos no terminal:
 
 ```console
  $ gradle build
  $ gradle test
 ```
 
-## Rodando do Intellij
+### Intellij
 
 Siga os passos:
 
 1) Abra o projeto com a opção de gradle e java.
 
-2) Execute os passo:
+2) Execute o passo:
 
 ![intellij-1](./assets/intellij-1.png)
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
