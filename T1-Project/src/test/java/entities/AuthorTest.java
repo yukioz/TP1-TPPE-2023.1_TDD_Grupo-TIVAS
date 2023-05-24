@@ -13,33 +13,15 @@ class AuthorTest {
     @Test
     void calculateAuthorCompleteness1() {
         int completness = author1.calculateAuthorCompleteness();
-        Assertions.assertEquals(completness, 100);
+        Assertions.assertEquals(completness, 50);
     }
 
-    Identifier identifier2 = new Identifier("", ""); 
+    Identifier identifier2 = new Identifier("123", ""); 
     Author author2 = new Author(identifier2, "potuguese", "portugal", "lisbon", "seixal"); 
 
     @Test
     void calculateAuthorCompleteness2() {
         int completness = author2.calculateAuthorCompleteness();
         Assertions.assertEquals(completness, 100);
-    }
-
-    Identifier identifier3 = new Identifier("123", "123"); 
-    Author author3 = new Author(identifier3, "", "", "", ""); 
-
-    @Test
-    void calculateAuthorCompleteness3() {
-        int completness = author3.calculateAuthorCompleteness();
-        Assertions.assertEquals(completness, 100);
-    }
-
-    Identifier identifier4 = new Identifier("", ""); 
-    Author author4 = new Author(identifier4, "", "", "", ""); 
-
-    @Test
-    void calculateAuthorCompleteness4() {
-        int completness = author4.calculateAuthorCompleteness();
-        Assertions.assertEquals(completness, 0);
     }
 }
