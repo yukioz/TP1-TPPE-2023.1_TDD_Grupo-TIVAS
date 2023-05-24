@@ -51,10 +51,23 @@ public class Publication {
         this.author = author;
     }
 
-    // Método para verificar a completness da PessoaFisica
     public int calculatePublicationCompleteness() {
-        int completness = 100;
+        int completeness = 0;
 
-        return completness;
+        if (!title.isEmpty()) {
+            completeness += 25;
+        }
+
+        if (!publicationDate.isEmpty()) {
+            completeness += 25;
+        }
+
+        if (!language.isEmpty()) {
+            completeness += 25;
+        }
+
+        completeness += author.calculateAuthorCompleteness() / 4;
+
+        return completeness;
     }
 }
