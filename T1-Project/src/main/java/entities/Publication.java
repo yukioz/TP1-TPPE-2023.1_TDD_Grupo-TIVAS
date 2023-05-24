@@ -7,14 +7,14 @@ public class Publication {
     private String title;
     private String publicationDate;
     private String language;
-    private ArrayList<Author> authors;
+    private Author author;
 
     // Construtor
-    public Publication(String title, String publicationDate, String language, ArrayList<Author> authors) {
+    public Publication(String title, String publicationDate, String language, Author author) {
         this.title = title;
         this.publicationDate = publicationDate;
         this.language = language;
-        this.authors = authors;
+        this.author = author;
     }
 
     // Getters e Setters
@@ -43,12 +43,12 @@ public class Publication {
         this.language = language;
     }
 
-    public ArrayList<Author> getAuthors() {
-        return authors;
+    public Author getAuthor() {
+        return author;
     }
 
-    public void setAuthors(ArrayList<Author> authors) {
-        this.authors = authors;
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
     // Método para verificar a completness da PessoaFisica
