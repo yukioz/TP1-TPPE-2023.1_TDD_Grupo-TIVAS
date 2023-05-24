@@ -123,3 +123,9 @@ Siga os passos:
 2) Execute o passo:
 
 ![intellij-1](./assets/intellij-1.png)
+
+## Rodando
+
+![rodando-1](./assets/rodando.png)
+
+![rodando-2](./assets/rodando-2.png)
