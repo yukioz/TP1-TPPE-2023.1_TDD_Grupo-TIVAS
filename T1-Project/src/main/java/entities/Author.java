@@ -58,8 +58,13 @@ public class Author {
 
     // Método para verificar a completness
     public int calculateAuthorCompleteness() {
-        int completness = 100;
+        boolean emptyIdentifier = true;
 
-        return completness;
+        if(identifier.calculateIdentifierCompleteness() == 100){
+            emptyIdentifier = false;
+        }
+
+        if(emptyIdentifier && nationality.isEmpty() && birthCountry.isEmpty() && birthCity.isEmpty() && birthState.isEmpty()) return 0;
+        return 100;
     }
 }
