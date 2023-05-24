@@ -27,6 +27,9 @@ public class Identifier {
 
   public int calculateIdentifierCompleteness() {
     if(lattes.isEmpty() && orcid.isEmpty()) return 0;
+
+    if(!lattes.isEmpty() && !orcid.isEmpty()) return 0;
+    
     return 100;
   }
 
