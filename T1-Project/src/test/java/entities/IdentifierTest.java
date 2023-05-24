@@ -28,44 +28,42 @@ public class IdentifierTest {
     List<Identifier> IdentifierList = new ArrayList<Identifier>();
 
     try (InputStream inputStream = new FileInputStream("src/database/extratoFioCruz.json")) {
-        JSONTokener tokener = new JSONTokener(inputStream);
-        JSONObject object = new JSONObject(tokener);
-        JSONArray publications = object.getJSONArray("publication");
+      JSONTokener tokener = new JSONTokener(inputStream);
+      JSONObject object = new JSONObject(tokener);
+      JSONArray publications = object.getJSONArray("publication");
 
-        for (int i = 0; i < publications.length(); i++) {
-            JSONObject publicationObj = publications.getJSONObject(i);
+      for (int i = 0; i < publications.length(); i++) {
+        JSONObject publicationObj = publications.getJSONObject(i);
 
-            // Identifier
-            String lattes = "";
-            try {
-                lattes = publicationObj.getJSONArray("authors").getJSONObject(0).getString("identifier_lattes");
-            } catch (JSONException | NullPointerException e) {
-                // Handle the exception (e.g., log an error, set a default value, etc.)
-            }
-
-            String orcid = "";
-            try {
-                orcid = publicationObj.getJSONArray("authors").getJSONObject(0).getString("identifier_orcid");
-            } catch (JSONException | NullPointerException e) {
-                // Handle the exception
-            }
-
-            Identifier identifier = new Identifier(lattes, orcid);
-            IdentifierList.add(identifier);
-
+        // Identifier
+        String lattes = "";
+        try {
+          lattes = publicationObj.getJSONArray("authors").getJSONObject(0).getString("identifier_lattes");
+        } catch (JSONException | NullPointerException e) {
+          // Handle the exception (e.g., log an error, set a default value, etc.)
         }
 
+        String orcid = "";
+        try {
+          orcid = publicationObj.getJSONArray("authors").getJSONObject(0).getString("identifier_orcid");
+        } catch (JSONException | NullPointerException e) {
+          // Handle the exception
+        }
+
+        Identifier identifier = new Identifier(lattes, orcid);
+        IdentifierList.add(identifier);
+
+      }
+
     } catch (Exception e) {
-        e.printStackTrace();
+      e.printStackTrace();
     }
 
     return Stream.of(
         Arguments.of(IdentifierList.get(0), 0),
         Arguments.of(IdentifierList.get(3), 100),
-        Arguments.of(IdentifierList.get(4), 0)
-    );
+        Arguments.of(IdentifierList.get(4), 0));
 
-}
+  }
 
-  
 }
