@@ -6,11 +6,13 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 
 | Nome | Matrícula |
 |--- |--- |
-| Amanda | 19/0124997 |
+| Amanda Nobre | 19/0124997 |
 | Irwin Schmitt | 17/0105342 |
 | Sara Campos | 17/0045269 |
 | Thaís Rebouças | 18/0078224 |
+| Thiago França | 17/0114929 |
 | Victor Yukio | 18/0068229 |
+
 
 ## Trabalho Prático 1 - _Test-Driven Development_
 
@@ -81,8 +83,30 @@ _commits_:
 > * triangulação.
 ---
 
+## Resolução do grupo
+
+Para resolver o problema em questão, o grupo utilizou a seguinte lógica para calcular a completude dos campos:
+
+![logica](assets/logica.png)
+
+Foram criadas classes para representar o Publication e os atributos compostos (Identifier e Author) e resto dos campos atômicos foram tratados como atributos.
+
+O trabalho apresenta as três técnicas do TDD, falsificação, duplicação e triangulação, feitas nessa respectiva ordem como pode ser visto nos seguintes commits:
+
+Falsificação: [Falsificação Identifier](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/731424ba30a19a63390adc9a12b6342c908c48e4), [Falsificação Author](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/6c146cb18ae0d45e8fd0613e63ab73e6e94055fa), [Falsificação Publication](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/0c1aded8fbd5f96b6323a4a49442619d50be487a)
+
+Duplicação: [Duplicação Identifier](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/6b05548cb4206ae32263ea7918e01cc5ee22109f), [Duplicação Author](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/b351d84ee5326ed98b895013db2ecce4e82af316), [Duplicação Publication](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/4e5c76e2650067372a4f5f381842b1ed5ec6f1fe)
+
+Triangulação: [Triangulação Identifier](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/a8c1449947aca456afe7b61792d42e21c8dfd276), [Triangulação Author](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/3b7a3f843fa46ad20c323f254d7e88444c26a762), [Triangulação Publication](https://github.com/yukioz/TP1-TPPE-2023.1_TDD_Grupo-TIVAS/commit/dde7478715b911f1a6bb777d64216de6b3edcf5d)
+
+Todos os métodos para verificar a completude estão testados e parametrizados a partir do JSON dispoibilizado pelo professor.
+
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+Testes sendo executados no VSCode
+![rodando-1](./assets/rodando.png)
+
+Testes sendo executados no IntelliJ
+![rodando-2](./assets/rodando-2.png)
 
 ## Instalação 
 **Linguagem**: Java (gradle) JDK 17
@@ -123,9 +147,3 @@ Siga os passos:
 2) Execute o passo:
 
 ![intellij-1](./assets/intellij-1.png)
-
-## Rodando
-
-![rodando-1](./assets/rodando.png)
-
-![rodando-2](./assets/rodando-2.png)
