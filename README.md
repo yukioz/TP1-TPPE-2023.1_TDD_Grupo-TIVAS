@@ -110,6 +110,7 @@ Testes sendo executados no IntelliJ
 
 ## Instalação 
 **Linguagem**: Java (gradle) JDK 17
+**Framework de test**: JUNIT 5.9.1
 
 ### Eclipse
 
@@ -135,7 +136,7 @@ Siga os passos:
 
 ```console
  $ gradle build
- $ gradle test
+ $ gradle clean test
 ```
 
 ### Intellij
